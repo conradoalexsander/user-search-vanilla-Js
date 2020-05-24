@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- Compiled and minified CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+		/>
+
+		<link rel="stylesheet" href="./css/styles.css" />
+
+		<title>User search</title>
+	</head>
+	<body>
+		<div class="ui container">
+			<h5 class="ui left aligned icon header" id="search-icon">
+				Find users at randomuser.me!
+			</h5>
+			<div class="ui horizontal segment load-segment" id="load-segment">
+				<div class="ui active inverted dimmer">
+					<div class="ui massive text loader">Loading</div>
+				</div>
+			</div>
+
+			<div class="ui container not-visible" id="search-container">
+				<h2 class="ui center aligned violet icon header" id="search-icon">
+					<i class="circular users icon"></i>
+					Users search
+					<div class="ui divider"></div>
+				</h2>
+
+				<div
+					class="ui transparent right icon fluid input focus"
+					id="search-segment"
+				>
+					<input type="text" placeholder="Search..." id="search-input" />
+					<button class="ui button violet" id="search-button" disabled>
+						Search
+					</button>
+				</div>
+			</div>
+			<div class="ui divider"></div>
+			<div class="ui horizontal segments">
+				<div class="ui segment green">
+					<h2 class="header">
+						<span id="found-user-quantity"></span> User(s) found
+					</h2>
+					<div class="ui relaxed divided list" id="user-list"></div>
+				</div>
+				<div class="ui segment blue">
+					<h2 class="header statistic">Statistics</h2>
+					<p>
+						Male genre:
+						<span class="statistic" id="found-male-quantity"></span>
+					</p>
+					<p>
+						Female genre:
+						<span class="statistic" id="found-female-quantity"></span>
+					</p>
+					<p>Sum of ages: <span class="statistic" id="sum-age"></span></p>
+					<p>Average age: <span class="statistic" id="average-age"></span></p>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>
