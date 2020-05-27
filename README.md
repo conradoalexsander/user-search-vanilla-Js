@@ -1,6 +1,6 @@
 # User search
 
-Imagine the following situation: you already have a gigantic and beuatiful user base, with a lot of data about them. All of this
+Imagine the following situation: you already have a gigantic and beautiful user base, with a lot of data about them. All of this
 stored in a smart and elegant API.
 
 So you can make a list of them with their pictures and make some basic statistics because... Why not?
